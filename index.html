@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard- epaymentbd</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ----------dashboard design---------- -->
+    <div class="main_container">
+      <div class="left_container">
+        <div class="dashboard_title">
+          <ion-icon name="grid-outline"></ion-icon>
+          <span>EpaymentBD</span>
+        </div>
+
+        <div class="dashboard">
+          <h1 class="dashboard_name">Dashboard</h1>
+          <ul class="dashboard__home">
+            <a href="#">
+              <ion-icon name="home-outline"></ion-icon> <span>Overview</span>
+            </a>
+            <a href="#">
+              <ion-icon name="apps-outline"></ion-icon>
+              <span>Current Projects</span>
+            </a>
+          </ul>
+        </div>
+
+        <!-- ----------customer section---------- -->
+
+        <div class="customer">
+          <h1 class="customer_title">Customer</h1>
+          <ul class="customer__home">
+            <a href="#">
+              <ion-icon name="color-filter-outline"></ion-icon>
+              <span>Analytics</span>
+            </a>
+            <a href="#">
+              <ion-icon name="people-outline"></ion-icon>
+              <span>Audience</span>
+            </a>
+            <a href="#">
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span>Projections</span>
+            </a>
+            <a href="#">
+              <ion-icon name="reorder-four-outline"></ion-icon>
+              <span>Categories</span>
+            </a>
+            <a href="#">
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span>Reporting</span>
+            </a>
+          </ul>
+        </div>
+
+        <!-- ----------reports here---------- -->
+
+        <div class="reports">
+          <div class="report_title">Reports</div>
+          <ul class="reports_home">
+            <a href="#">
+              <ion-icon name="stats-chart-outline"></ion-icon>
+              <span>Reports</span>
+            </a>
+            <a href="#">
+              <ion-icon name="calendar-number-outline"></ion-icon>
+              <span>Upcoming Reports</span>
+            </a>
+          </ul>
+        </div>
+
+        <!-- ----------settings here---------- -->
+
+        <div class="settings">
+          <a href="#">
+            <ion-icon name="settings-outline"></ion-icon>
+            <span>Settings</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ----------right side here---------- -->
+
+      <div class="right_container">
+        <!-- ----------topbar---------- -->
+        <div class="rc_topbar">
+          <h1>Dashboard</h1>
+        </div>
+
+        <!-- ----------overview boxes here---------- -->
+        
+        <p class="_ov_hd">Overview</p>
+        <div class="overview">
+          <div class="overview_card">
+            <div class="overview_icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="overview_info">
+              <div>
+                <p>Total shipments</p>
+                <h1>500</h1>
+              </div>
+              <div class="overview_option">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overview_card">
+            <div class="overview_icon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div class="overview_info">
+              <div>
+                <p>Pending orders</p>
+                <h1>15</h1>
+              </div>
+              <div class="overview_option">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overview_card">
+            <div class="overview_icon">
+              <i class="fa-regular fa-money-bill-1"></i>
+            </div>
+            <div class="overview_info">
+              <div>
+                <p>Revenue</p>
+                <h1>&dollar; 2400</h1>
+              </div>
+              <div class="overview_option">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------recent activity here---------- -->
+
+        <div class="rc_activity">
+          <p>Recenty activity</p>
+          <div class="client_status">
+            <div class="cls_n_c">
+              <div>
+              <div><i class="fa-solid fa-user"></i> <span>5</span></div>
+              <p>New client(this week)</p>
+              </div>
+
+              <div>
+                <div><i class="fa-solid fa-user"></i> <span>15</span></div>
+                <p>New client(this month)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------recent order table---------- -->
+
+        <div class="recent_order">
+          <p>Recent order</p>
+
+          <div class="search_order">
+            <input type="text" placeholder="search order">
+            <button>search</button>
+          </div>
+
+          <div class="order_table">
+            <table>
+              <thead>
+                <tr>
+                  <td>Sl NO</td>
+                  <td>Order id</td>
+                  <td>Customer name</td>
+                  <td>Order Status</td>
+                  <td>Address</td>
+                  <td>Amount</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>21xydli</td>
+                  <td>Md Ali Hasan</td>
+                  <td>Pending</td>
+                  <td>Chattogram</td>
+                  <td>&dollar; 1200</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>21xydli</td>
+                  <td>Md Saimon</td>
+                  <td>Confirm</td>
+                  <td>Chattogram</td>
+                  <td>&dollar; 1200</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>21xydli</td>
+                  <td>Md Affan</td>
+                  <td>Pending</td>
+                  <td>Chattogram</td>
+                  <td>&dollar; 2500</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2ldkher</td>
+                  <td>Junayed Ansari</td>
+                  <td>Pending</td>
+                  <td>Dhaka</td>
+                  <td>&dollar; 1420</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>t2sl345</td>
+                  <td>Al Amin Uddin</td>
+                  <td>Reject</td>
+                  <td>Borisal</td>
+                  <td>&dollar; 410</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>21xydli</td>
+                  <td>Md Ali Hasan</td>
+                  <td>Pending</td>
+                  <td>Chattogram</td>
+                  <td>&dollar; 1200</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>21xydli</td>
+                  <td>Md Saimon</td>
+                  <td>Confirm</td>
+                  <td>Chattogram</td>
+                  <td>&dollar; 1200</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>21xydli</td>
+                  <td>Md Affan</td>
+                  <td>Pending</td>
+                  <td>Chattogram</td>
+                  <td>&dollar; 2500</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>2ldkher</td>
+                  <td>Junayed Ansari</td>
+                  <td>Pending</td>
+                  <td>Dhaka</td>
+                  <td>&dollar; 1420</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>t2sl345</td>
+                  <td>Al Amin Uddin</td>
+                  <td>Reject</td>
+                  <td>Borisal</td>
+                  <td>&dollar; 410</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
