@@ -5,12 +5,13 @@
 }
 
 /* product cards goes here  */
-
-.rc_head {
-  text-align: center;
-  font-size: 2.5rem;
+.product_cards {
   margin-top: 2rem;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .product_card {
