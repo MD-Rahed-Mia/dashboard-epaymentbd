@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* default css goes here  */
+
+
+/* default css ends here  */
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.main_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------- sidebar here---------------*/
+.left_container {
+  width: 15%;
+  height: 100vh;
+  background: rgb(17, 25, 38);
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+.dashboard {
+  margin-top: 2rem;
+}
+
+.dashboard_title {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.left_container {
+  padding-left: 1rem;
+}
+
+.dashboard_name {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: white;
+
+}
+
+.dashboard__home {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard__home a {
+  list-style-type: none;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.dashboard__home a.active {
+  color: seagreen;
+  font-weight: bold;
+  font-size: 1.4rem;
+
+}
+
+.dashboard__home li ion-icon {
+  margin-right: 0.5rem;
+}
+
+/* ------------ customer here--------------*/
+
+.customer {
+  margin-top: 2rem;
+}
+
+.customer_title {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.customer__home {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer__home a {
+  list-style-type: none;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+/* ------------reports here--------------*/
+
+.reports {
+  margin-top: 2rem;
+}
+
+.report_title {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.reports_home {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.reports_home a {
+  list-style-type: none;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.left_container span {
+  margin-left: 0.5rem;
+}
+
+/* ------------ settings here--------------*/
+
+.settings {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.settings a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+
+/* ------------ right side bar here--------------*/
+.right_container {
+  width: 80%;
+  height: 100vh;
+  overflow: auto;
+  background: whitesmoke;
+  padding: 2rem;
+}
+
+.right_container::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.right_container::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 20px;
+  background: lightgray;
+}
+
+/* ------------ topbar here--------------*/
+
+.rc_topbar {
+  width: 100%;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.rc_topbar h1 {
+  font-size: 1rem;
+}
+
+/* ------------ overview here--------------*/
+
+._ov_hd {
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+}
+
+.overview_heading {
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.overview {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.overview_card {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1rem;
+  height: 100%;
+  min-width: 400px;
+  border-radius: 10px;
+}
+
+.overview_icon {
+  padding: 1rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+
+.overview_icon i {
+  font-size: 2rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.overview_info {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overview_option {
+  width: 50px;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* ------------ rc status here--------------*/
+
+.rc_activity {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding: 0rem 1rem;
+}
+
+.client_status {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  opacity: 0.8;
+}
+
+.cls_n_c {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+/* ------------ search item--------------*/
+
+.search_order {
+  margin-top: 1rem;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.search_order input {
+  width: 90%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.search_order button {
+  width: 130px;
+  padding: 0.5rem;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #6ab04c;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ------------ recent order here--------------*/
+
+.recent_order {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.order_table {
+  width: 100%;
+  max-height: 500px;
+}
+
+.order_table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: white;
+}
+
+.order_table table thead {
+  background: lightgray;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.order_table table tr,
+td {
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.order_table table tr:nth-of-type(even) {
+  background: rgba(211, 211, 211, 0.583);
+}
+
+.order_table table tr:hover {
+  background: #badc58;
+}

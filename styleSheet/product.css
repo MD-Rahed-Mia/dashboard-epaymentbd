@@ -1,0 +1,50 @@
+
+
+:root {
+  --text_primary: seagreen;
+}
+
+/* product cards goes here  */
+
+.rc_head {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.product_card {
+  width: 230px;
+  background: whitesmoke;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  position: relative;
+  border-radius: 5px;
+}
+
+.product_card img {
+  width: 150px;
+  height: 150px;
+}
+
+.product_card h1.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.product_card p.price {
+  font-size: 1.5rem;
+  color: var(--text_primary);
+  font-weight: 400;
+}
+
+#product_bulk_select {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+/* product cards ends here  */

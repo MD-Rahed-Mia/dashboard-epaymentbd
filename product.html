@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dashboard- epaymentbd</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="styleSheet/product.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ----------dashboard design---------- -->
+  <div class="main_container">
+    <div class="left_container">
+      <div class="dashboard_title">
+        <ion-icon name="grid-outline"></ion-icon>
+        <span>EpaymentBD</span>
+      </div>
+
+      <div class="dashboard">
+        <h1 class="dashboard_name">Dashboard</h1>
+        <ul class="dashboard__home">
+          <a href="index.html">
+            <ion-icon name="home-outline"></ion-icon> <span>Overview</span>
+          </a>
+          <a href="#"  class="active">
+            <ion-icon name="apps-outline"></ion-icon>
+            <span>Product</span>
+          </a>
+        </ul>
+      </div>
+
+      <!-- ----------customer section---------- -->
+
+      <div class="customer">
+        <h1 class="customer_title">Customer</h1>
+        <ul class="customer__home">
+          <a href="#">
+            <ion-icon name="color-filter-outline"></ion-icon>
+            <span>Analytics</span>
+          </a>
+          <a href="#">
+            <ion-icon name="people-outline"></ion-icon>
+            <span>Audience</span>
+          </a>
+          <a href="#">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>Projections</span>
+          </a>
+          <a href="#">
+            <ion-icon name="reorder-four-outline"></ion-icon>
+            <span>Categories</span>
+          </a>
+          <a href="#">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>Reporting</span>
+          </a>
+        </ul>
+      </div>
+
+      <!-- ----------reports here---------- -->
+
+      <div class="reports">
+        <div class="report_title">Reports</div>
+        <ul class="reports_home">
+          <a href="#">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <span>Reports</span>
+          </a>
+          <a href="#">
+            <ion-icon name="calendar-number-outline"></ion-icon>
+            <span>Upcoming Reports</span>
+          </a>
+        </ul>
+      </div>
+
+      <!-- ----------settings here---------- -->
+
+      <div class="settings">
+        <a href="#">
+          <ion-icon name="settings-outline"></ion-icon>
+          <span>Settings</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ----------right side here---------- -->
+
+    <div class="right_container">
+      <!-- ----------topbar---------- -->
+      <div class="rc_topbar">
+        <h1>Product</h1>
+      </div>
+
+      <!-- product cards goes here  -->
+    
+      <div class="product_cards">
+
+        <div class="product_card">
+          <img src="images/product1.png" alt="product img">
+          <p>Category</p>
+          <h1 class="title">Title goes here</h1>
+          <p class="price">&dollar; Price</p>
+          <i class="fa-regular fa-circle-check" id="product_bulk_select"></i>
+        </div>
+
+      </div>
+
+      <!-- product cards ends here  -->
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
