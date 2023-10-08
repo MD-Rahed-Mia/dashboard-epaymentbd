@@ -25,7 +25,7 @@
           <a href="index.html">
             <ion-icon name="home-outline"></ion-icon> <span>Overview</span>
           </a>
-          <a href="#"  class="active">
+          <a href="#" class="active">
             <ion-icon name="apps-outline"></ion-icon>
             <span>Product</span>
           </a>
@@ -95,9 +95,30 @@
       </div>
 
       <!-- product cards goes here  -->
-    
+
       <div class="product_cards">
 
+        <div class="product_card">
+          <img src="images/product1.png" alt="product img">
+          <p>Category</p>
+          <h1 class="title">Title goes here</h1>
+          <p class="price">&dollar; Price</p>
+          <i class="fa-regular fa-circle-check" id="product_bulk_select"></i>
+        </div>
+        <div class="product_card">
+          <img src="images/product1.png" alt="product img">
+          <p>Category</p>
+          <h1 class="title">Title goes here</h1>
+          <p class="price">&dollar; Price</p>
+          <i class="fa-regular fa-circle-check" id="product_bulk_select"></i>
+        </div>
+        <div class="product_card">
+          <img src="images/product1.png" alt="product img">
+          <p>Category</p>
+          <h1 class="title">Title goes here</h1>
+          <p class="price">&dollar; Price</p>
+          <i class="fa-regular fa-circle-check" id="product_bulk_select"></i>
+        </div>
         <div class="product_card">
           <img src="images/product1.png" alt="product img">
           <p>Category</p>
@@ -115,7 +136,108 @@
 
       </div>
 
+      <!-- submit button goes here  -->
+      <div class="sub_btn">
+        <button>submit</button>
+      </div>
+
+      <!-- details table goes here  -->
+
+      <table class="modal_details">
+        <thead>
+          <tr>
+            <td>Sl no</td>
+            <td>User name</td>
+            <td>Phone number</td>
+            <td>Email</td>
+            <td>Status</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Md Rahed Mia</td>
+            <td>01575088264</td>
+            <td>mdrahed321@gmail.com</td>
+            <td><span class="mt_status_active">active</span></td>
+          </tr>
+          <tr>
+            <td>01</td>
+            <td>Md Rahed Mia</td>
+            <td>01575088264</td>
+            <td>mdrahed321@gmail.com</td>
+            <td><span class="mt_status_active">active</span></td>
+          </tr>
+          <tr>
+            <td>01</td>
+            <td>Md Rahed Mia</td>
+            <td>01575088264</td>
+            <td>mdrahed321@gmail.com</td>
+            <td><span class="mt_status_rejected">rejected</span></td>
+          </tr>
+        </tbody>
+      </table>
+
       <!-- product cards ends here  -->
+
+      <!-- select multiple element js code here  -->
+
+      <script>
+        let count = 1;
+
+        let cardAll = document.querySelectorAll('.product_card');
+        let product_cards = document.querySelector('.product_cards');
+        let subBtn = document.querySelector(".sub_btn");
+        let modalDetails = document.querySelector('.modal_details');
+        let selectElementIcon = document.querySelectorAll(".product_card i");
+        let selectedItem = [];
+
+        let ck = false;
+
+        function selectedItemShow(item) {
+          console.log(typeof item);
+        }
+        cardAll.forEach((element, index) => {
+          element.addEventListener('click', () => {
+            ck = !ck;
+            if (ck) {
+              selectElementIcon[index].classList.remove("fa-regular");
+              selectElementIcon[index].classList.add("fa-solid");
+              selectedItem.push(element);
+            }
+            else {
+              selectElementIcon[index].classList.remove("fa-solid");
+              selectElementIcon[index].classList.add("fa-regular");
+            }
+
+            if (selectedItem.length > 1) {
+              subBtn.classList.add("active");
+            }
+          })
+        })
+
+        let subBtnButton = subBtn.querySelector('button');
+
+        subBtn.addEventListener('click', () => {
+          count++;
+          if (count % 2 == 0) {
+            modalDetails.classList.add("active");
+            subBtnButton.innerHTML = "cancel";
+          }
+          else if (count % 2 == 1) {
+            modalDetails.classList.remove("active");
+            subBtnButton.innerHTML = "submit";
+          }
+
+        })
+
+
+      </script>
+
+
+
+      <!-- select multiple element js code end here  -->
+
 
     </div>
 
