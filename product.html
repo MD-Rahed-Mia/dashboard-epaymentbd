@@ -199,20 +199,43 @@
         }
         cardAll.forEach((element, index) => {
           element.addEventListener('click', () => {
-            ck = !ck;
-            if (ck) {
+            // ck = !ck;
+            // if (ck) {
+            //   selectElementIcon[index].classList.remove("fa-regular");
+            //   selectElementIcon[index].classList.add("fa-solid");
+            //   selectedItem.push(element);
+            // }
+            // else {
+            //   selectElementIcon[index].classList.remove("fa-solid");
+            //   selectElementIcon[index].classList.add("fa-regular");
+            // }
+
+            // if (selectedItem.length > 1) {
+            //   subBtn.classList.add("active");
+            // }
+
+            if (selectElementIcon[index].classList.contains("fa-regular")) {
               selectElementIcon[index].classList.remove("fa-regular");
               selectElementIcon[index].classList.add("fa-solid");
-              selectedItem.push(element);
+              selectedItem.push(cardAll[index]);
             }
-            else {
+
+            else if (selectElementIcon[index].classList.contains("fa-solid")) {
               selectElementIcon[index].classList.remove("fa-solid");
               selectElementIcon[index].classList.add("fa-regular");
+               selectedItem.pop(cardAll[index]);
             }
+
 
             if (selectedItem.length > 1) {
               subBtn.classList.add("active");
             }
+            if (selectedItem < 1) {
+              subBtn.classList.remove("active");
+            }
+
+            console.log(selectedItem);
+
           })
         })
 
